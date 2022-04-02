@@ -1,0 +1,622 @@
+/* Elena Marochkina */
+/* login: xmaroc00 */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    min-width: 768px;
+    font-family: "PT Sans";
+    text-align: center;
+}
+
+body h2{
+    color: black;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+
+body h3{
+    color: black;
+    font-size: 24px;
+}
+
+body p{
+    color: #898989;
+    font-size: 18px;
+    line-height: 1.7;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+header {
+    display: inline-block;
+    height: 860px;
+    width: 100%;
+    background: url(../img/header.jpg) no-repeat center;
+    background-size: cover;
+    font-family: "PT Sans";
+    text-align: left;
+}
+
+header h1{
+    color: white;
+    font-size: 64px;
+    margin-top: calc(100% * 1/3);
+}
+
+.content{
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px 80px 20px;
+}
+
+header .content {
+    padding-top: 10px;
+}
+
+#logo {
+    font-family: "Special Elite";
+    font-size: 25px;
+    color: steelblue;
+    width: 50%;
+}
+
+#logo a:hover{
+    color: white;
+}
+
+#header-menu{
+    color: #898989;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding-top: 10px;
+}
+
+#networks{
+    order: 1;
+}
+
+#networks i:hover{
+    color: white;
+}
+
+#navigation{
+    padding-top: 15px;
+    width: 50%;
+    font-size: 13px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    border: 1px;
+}
+
+#navigation li{
+    display: inline;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    transition: all .5s ease-in-out;
+}
+
+#navigation li:hover{
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: #898989;
+}
+
+#contacts span{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+#contacts i{
+    color: steelblue;
+}
+
+#contacts a:hover{
+    color: white;
+}
+
+#networks span{
+    color: steelblue;
+    display: inline;
+    margin-left: 10px;
+}
+
+#get-started {
+    color: #898989;
+    font-size: 18px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #898989;
+    border-radius: 20px;
+    padding: 15px 15px;
+    transition: all .5s ease-in-out;
+}
+
+#get-started:hover {
+    background-color: steelblue;
+}
+
+#get-started:hover a{
+    color: white;
+}
+
+#services .content > div {
+    display: inline-grid;
+    grid-template-columns: repeat(2,300px);
+    grid-template-columns: repeat(2,300px);
+    grid-gap: 40px;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#services .content .services-column{
+    border-radius: 5px;  
+    box-shadow: 0 0 10px rgba(107, 107, 107, 0.5);
+    transition: all .5s ease-in-out;
+}
+
+.services-card img{
+    width: 50px;  
+    margin-top: 20px; 
+    border-style: solid;
+    border-width: 2px;
+    border-color: steelblue;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all .5s ease-in-out;    
+}
+
+.services-card h3{
+    padding-top: 15px;
+}
+
+.services-card p{
+    padding: 20px;
+    color: #bfbfbf;
+    font-size: 14px;    
+}
+
+.services-card img:last-child{
+    display: none;
+}
+
+#services .content .services-column:hover{
+    border-width: 1px;  
+    border-radius: 5px;  
+    box-shadow: 0 0 10px rgba(70, 130, 180, 0.5);
+}
+
+.services-card:hover img:first-child{
+    display: none;
+}
+
+.services-card:hover img:last-child{
+    display: inline;
+    background-color: steelblue;
+}
+
+.services-card:hover h3{
+    color: steelblue;
+}
+
+#about{
+    background-color: #f7f7f7;
+}
+#about p{
+    text-align: justify;
+    padding-top: 0px;
+}
+#about h2{
+    font-size: 32px;
+    text-transform: capitalize;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-item img:nth-child(odd){
+    width: 40%;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+}
+
+.about-item img:nth-child(odd):hover{
+    width: 50%;
+}
+
+.about-item:nth-child(even) img{
+    width: 40%;
+    float: right;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-right: 0px;
+    margin-top: 20px;
+    transition: all .5s;
+    border-radius: 5px;
+}
+
+.about-item img:nth-child(even):hover{
+    width: 50%;
+}
+
+#team .content{
+    display: grid;
+    grid-template-areas:"head head head head"  
+                        "div1 div2 div3 div4";  
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 20px;
+}
+
+#team{
+    border-bottom: 1px dashed #bfbfbf;
+}
+
+.team-card{
+    border-width: 1px;  
+    border-radius: 5px;  
+    box-shadow: 0 0 10px rgba(83, 83, 83, 0.5);
+}
+
+.team-card:hover{
+    box-shadow: 0 0 10px rgba(70, 130, 180, 0.5);
+}
+
+.team-card img{
+    width: 100%;
+    border-radius: 5px;
+    padding-bottom: 40px;
+}
+
+.team-card:hover h3{
+    color: steelblue;
+}
+
+.team-card h4{
+    color: #898989;
+}
+
+.team-card p{
+    padding-top: 10px;
+    padding-bottom:20px;
+}
+#team .content h2{
+    grid-area: head;
+    grid-auto-flow: row;     
+}
+
+#team .content:nth-child(2){
+    grid-area: div1;
+}
+
+#team .content:nth-child(3){
+    grid-area: div2;
+}
+
+#team .content:nth-child(4){
+    grid-area: div3;
+}
+
+#team .content:nth-child(5){
+    grid-area: div4;
+}
+
+#stats .content{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.stats-card{
+    border-radius: 5px;  
+    background-color: #4d4d4d;
+    min-width: 300px;
+    margin-bottom: 40pt;
+    margin-top: 40pt;
+    transition: all .5s ease-in-out;
+}
+
+.stats-card:hover{
+    background-color: steelblue;
+}
+.stats-card .fa-solid{
+    color: steelblue;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;    
+    position: relative;
+    top: -15%;
+    font-size:32px;
+}
+
+.stats-card h3{
+    color: white;
+    padding-top: 0px;
+}
+
+.stats-card p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#price{
+    background-color: #f7f7f7;
+}
+
+#price h2{
+    text-transform: capitalize;
+    padding-bottom: 40px;
+    font-size: 32px;
+}
+
+#price table{
+    border-collapse: separate;
+    width: 80%;
+    border-spacing: 0px 20px;
+    margin: auto;
+    padding-bottom: 40px;
+    line-height: 1.7;
+}
+
+#price .content th{
+    text-align: left;
+    font-size: 14px; 
+}
+
+#price .content td{
+    border-top: 1.5px dotted steelblue;
+    border-bottom: 1.5px dotted steelblue;
+    width: 240px;
+    color: #898989;
+    text-align: left;
+    list-style-position: inside;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+#price .content td li:first-child{
+    font-weight: bold;
+    list-style-type: none;
+}
+
+#price .content tr:hover td{
+    color: steelblue;
+    background-color: white;
+}
+
+#price .content td button{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "PT Sans";
+    padding: 20px;
+    border-radius: 5px;  
+    border-width: 1px;
+    border-style: solid;
+    border-color: steelblue;
+    transition: all .5s ease-in-out;
+}
+
+.content td button:hover{
+    background-color: steelblue;
+    color: white;
+}
+
+#refs{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px dashed #bfbfbf;
+}
+
+#refs .content{
+    display: flex;
+    justify-content: space-around;
+}
+.refs-card{
+    max-width: 400px;
+}
+
+.refs-card h3{
+    color: #898989;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+.refs-card img{
+    width: 60px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.refs-card figure{
+    display: flex;
+    justify-content: left;
+}
+
+blockquote {
+    width: 300px;
+    padding: 0 20px 20px 20px;
+    text-align: left;
+    position: relative;
+    background-color: #4d4d4d;
+    color: white;
+    border-radius: 5px; 
+
+}
+
+
+blockquote::before {
+    content: '"';
+    color: steelblue;
+    font-size:75px;
+    line-height: 10px;
+    position: relative;
+    top: 40px;
+}
+
+blockquote::after {
+    border: 15px solid transparent;
+    display: block;
+    content: '';
+    height: 0;
+    width: 0;
+    border-top-color: #4d4d4d;
+    border-left: #4d4d4d;
+    position: absolute;
+    top: 100%; left: 20px;
+}
+
+.refs-card:hover blockquote {
+    background-color: steelblue;
+}
+
+.refs-card:hover blockquote::after {
+    border-top-color: steelblue;
+    border-left: steelblue;
+}
+
+.refs-card:hover blockquote::before {
+    color: white;
+}
+
+#contact .content{
+    display: grid;
+    grid-template-areas:"contact contact contact"
+                        "map name email"  
+                        "map subject subject" 
+                        "map message message"
+                        "map submit submit";
+    align-content: center;
+}
+
+#contact form {
+    padding: 20px 0;
+}
+
+#contact .content h2{
+    grid-area: contact;
+    padding: 40px;
+}
+
+#map{
+    grid-area: map;
+    width: 600px;
+    height: 400px;
+}
+
+input {
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: steelblue;
+    color: steelblue;
+    text-indent: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+input:invalid {
+    color:red;
+}
+
+#contact-name{
+    grid-area: name;
+    width: 287px;
+    height: 40px;
+    
+}
+
+#contact-name:hover{
+    border-color: green;
+}
+
+#contact-email{
+    grid-area: email;
+    width: 287px;
+    height: 40px;
+}
+
+#contact-email:hover{
+    border-color: green;
+}
+
+#contact-subject{
+    grid-area: subject;
+    width: 600px;
+    height: 40px;
+}
+
+#contact-message{
+    grid-area: message;
+    width: 600px;
+    height: 100px;
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: steelblue;
+    color: steelblue;
+    text-indent: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+input:focus, textarea:focus{
+    outline: 1.5px solid green;
+}
+
+#contact-submit{
+    grid-area: submit;
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: steelblue;
+    color: white;
+}
+
+#contact-submit:hover{
+    background-color: green;
+}
+
+#footer{
+    background-color: black;
+}
+
+#footer .content{
+    display: flex;
+    justify-content: space-between;
+    color: #898989;
+    padding-top: 40pt;
+    padding-bottom: 40pt;
+}
+
+#footer .content span:nth-child(2){
+    color: steelblue;
+}
+
+
+
+
+
